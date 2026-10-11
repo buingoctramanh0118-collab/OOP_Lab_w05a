@@ -1,0 +1,14 @@
+/*
+MSSV: 202418832
+Họ tên: Bùi Ngọc Trâm Anh
+*/
+namespace LabW05a_DeviceManagement.Interfaces
+{
+    public interface INetworkable
+    {
+        string? IpAddress { get; }
+        bool IsConnected { get; }
+        void Connect(string ipAddress);
+        void Disconnect();
+    }
+}
